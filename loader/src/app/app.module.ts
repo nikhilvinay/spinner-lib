@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VbLoaderModule } from 'vb-loader';
-
+import { VbFileUploaderModule } from 'vb-file-uploader';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +12,8 @@ import { VbLoaderModule } from 'vb-loader';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    VbLoaderModule
+    VbLoaderModule,
+    VbFileUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

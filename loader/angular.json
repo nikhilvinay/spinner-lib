@@ -155,6 +155,41 @@
           }
         }
       }
+    },
+    "vb-file-uploader": {
+      "projectType": "library",
+      "root": "projects/vb-file-uploader",
+      "sourceRoot": "projects/vb-file-uploader/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/vb-file-uploader/tsconfig.lib.json",
+            "project": "projects/vb-file-uploader/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/vb-file-uploader/src/test.ts",
+            "tsConfig": "projects/vb-file-uploader/tsconfig.spec.json",
+            "karmaConfig": "projects/vb-file-uploader/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/vb-file-uploader/tsconfig.lib.json",
+              "projects/vb-file-uploader/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "loader"
 }

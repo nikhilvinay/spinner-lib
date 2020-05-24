@@ -24,6 +24,12 @@
       ],
       "vb-loader/*": [
         "dist/vb-loader/*"
+      ],
+      "vb-file-uploader": [
+        "dist/vb-file-uploader"
+      ],
+      "vb-file-uploader/*": [
+        "dist/vb-file-uploader/*"
       ]
     }
   },
