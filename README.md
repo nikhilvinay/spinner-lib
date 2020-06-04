@@ -19,7 +19,7 @@
 <h1>Examples</h1>
 <p>Soon I will fill this section :) </p>
 <hr></hr>
-<h1>How to vb-loader</h1>
+<h1>How to add vb-loader</h1>
 <ul>
   <li>Install vb-loader using npm i vbloader</li>
   <li>
